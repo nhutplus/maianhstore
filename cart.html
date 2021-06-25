@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Giỏ hàng - Mai Anh store</title>
+</head>
+<body>
+    <!-- Đầu trang -->
+    <div class="header">
+      <!-- Phần logo -->
+      <div class="header-container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>Mai Anh store</h1>
+          </div>
+
+          <div class="search-container">
+            <form action="./action_page.php">
+              <input type="text" placeholder="Tìm sản phẩm..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Phần menu điều hướng -->
+      <div class="nav-container">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./product.html">Sản phẩm</a></li>
+            <li><a href="./about.html">Giới thiệu</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+            <li><a href="./blog.html  ">Blog</a></li>
+            <div class="client">
+              <a href="./cart.html">
+                <div class="cart">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Giỏ hàng
+                </div>
+              </a>
+              <a href="./login.html">
+                <div class="login-btn">
+                  <i class="fa fa-user" aria-hidden="true"></i> Tài khoản
+                </div>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>   
+    </div>
+
+
+
+    <!-- Nội dung chính -->
+  <div class="main">
+    <div class="main-content">
+      <div class="cart-page">
+        <div class="checkout-info">
+          <h2>Thông tin đặt hàng</h2>
+          <div class="cart-form">
+            <form action="./checkout-info.php">
+              <input type="text" id="name" placeholder="Họ và tên">
+              <input type="tel" id="phone" placeholder="Số điện thoại">
+              <input type="email" id="email" placeholder="Địa chỉ email">
+              <input type="text" id="address" placeholder="Địa chỉ nhận hàng">
+              <textarea type="textarea" id="message" placeholder="Ghi chú"></textarea>
+              <select name="payment-method" id="pay">
+                <option value="COD">Thanh toán khi nhận hàng</option>
+                <option value="Chuyển khoản">Chuyển khoản ngân hàng</option>
+              </select>
+              <button class="confirm-cart" type="submit">Xác nhận đơn hàng</button>
+            </form>
+          </div>
+        </div>
+        <div class="cart-product">
+          <h2 class="cart-heading">Giỏ hàng của bạn</h2>
+          <div class="cart-list">
+            <div class="cart-product-item">
+              <img src="./img/aothun/black-polo.jpg" alt="" width="80px">
+              <div class="cart-product-info">
+                <h3>Áo thun nam Polo ngắn tay trẻ trung, năng động</h3>
+                <h3>219.000</h3>
+              </div>
+            </div>
+            <div class="cart-product-item">
+              <img src="./img/aothun/white-tshirt.jpg" alt="" width="80px">
+              <div class="cart-product-info">
+                <h3>Áo thun trơn ngắn tay 100% cotton thoáng mát</h3>
+                <h3>179.000</h3>
+              </div>
+            </div>
+          </div>
+          <div class="coupon">
+            <textarea name="coupon-code" id="" placeholder="Mã giảm giá"></textarea>
+            <button>Áp dụng</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Chân trang -->
+    <div class="footer-container">
+      <div class="footer">
+        <div class="left-footer">
+          <h1>Mai Anh store</h1>
+          <p class="address">1 Võ Văn Ngân, Tp. Thủ Đức</p>
+          <p class="phone">0901028507</p>
+          <p class="email">nhutplus@gmail.com</p>
+          <p>Made with ❤ from Tra Vinh province</p>
+        </div>
+        <div class="center-footer">
+          <h3>Kết nối với chúng tôi</h3>
+          <ul class="footer-link">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="right-footer">
+          <h3>Liên kết nhanh</h3>
+          <ul class="footer-link">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+            <li><a href="#">Chính sách giao hàng</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

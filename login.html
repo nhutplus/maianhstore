@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Đăng nhập - Mai Anh store</title>
+</head>
+<body>
+    <!-- Đầu trang -->
+    <div class="header">
+      <!-- Phần logo -->
+      <div class="header-container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>Mai Anh store</h1>
+          </div>
+
+          <div class="search-container">
+            <form action="./action_page.php">
+              <input type="text" placeholder="Tìm sản phẩm..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Phần menu điều hướng -->
+      <div class="nav-container">
+        <div class="nav-bar">
+          <ul>
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./product.html">Sản phẩm</a></li>
+            <li><a href="./about.html">Giới thiệu</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+            <li><a href="./blog.html  ">Blog</a></li>
+            <div class="client">
+              <a href="./cart.html">
+                <div class="cart">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>  Giỏ hàng
+                </div>
+              </a>
+              <a href="./login.html">
+                <div class="login-btn">
+                  <i class="fa fa-user" aria-hidden="true"></i> Tài khoản
+                </div>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>   
+    </div>
+
+
+
+    <!-- Nội dung chính -->
+  <div class="main">
+    <div class="main-content">
+      <!-- Form đăng nhập -->
+      <div class="login-form">
+        <div class="login-header">
+          <h2 class="login-title">Đăng nhập</h2>
+          <p class="login-des">Nhập tên đăng nhập và mật khẩu của bạn vào ô bên dưới để đăng nhập</p>
+        </div>
+        <div class="login-container">
+          <form action="./login.php">
+            <input type="text" id="username" placeholder="Tên đăng nhập">
+            <input type="password" id="password" placeholder="Mật khẩu">
+            <div class="login-option">
+              <div class="remember-pw">
+                <input type="checkbox" id="remember-login" name="remember-login" value="remember-login">
+                <label for="remember-login"> Ghi nhớ đăng nhập</label><br>
+              </div>
+              <div class="forgot-pw">
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+            </div>
+            <button class="login-btn">Đăng nhập</button>
+            <p style="text-align: center; opacity: 0.7;margin-top: 12px;">Hoặc</p>
+          </form>
+          <button class="login-btn-fb">Đăng nhập với Facebook</button>
+        </div>
+        <p class="go-register">Bạn chưa có Tài khoản? Vui lòng đăng ký Tài khoản mới <a href="./register.html">tại đây!</a></p>
+      </div>
+
+
+    </div>
+  </div>
+
+    <!-- Chân trang -->
+    <div class="footer-container">
+      <div class="footer">
+        <div class="left-footer">
+          <h1>Mai Anh store</h1>
+          <p class="address">1 Võ Văn Ngân, Tp. Thủ Đức</p>
+          <p class="phone">0901028507</p>
+          <p class="email">nhutplus@gmail.com</p>
+          <p>Made with ❤ from Tra Vinh province</p>
+        </div>
+        <div class="center-footer">
+          <h3>Kết nối với chúng tôi</h3>
+          <ul class="footer-link">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="right-footer">
+          <h3>Liên kết nhanh</h3>
+          <ul class="footer-link">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+            <li><a href="#">Chính sách giao hàng</a></li>
+            <li><a href="#">Phương thức thanh toán</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
